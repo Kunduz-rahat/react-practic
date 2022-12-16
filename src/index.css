@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root{
+	margin: 0 auto;
+}
+.post__btn{
+	border: 2px solid teal ;
+	padding: 5px 15px;
+	text-align: center;
+}
+.post{
+	display: flex;
+	padding: 14px;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid teal ;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+
+}
+.app{
+	padding: 20px;
+}
+
