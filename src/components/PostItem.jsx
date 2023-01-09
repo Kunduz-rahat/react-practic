@@ -1,7 +1,7 @@
 import React from 'react'
 import MyButton from './Ui/button/MyButton'
 
-export default function PostItem({posts}) {
+export default function PostItem({posts ,remove}) {
 	return (
 		<div>
 			{posts.map(post =>(
@@ -10,9 +10,7 @@ export default function PostItem({posts}) {
 				<h2>{post.title}</h2>
 					<p>{post.body}</p>
 				</div>
-
-					
-			   	<MyButton >delete</MyButton>
+			   	<MyButton onClick={()=> remove(post)}>delete</MyButton>
 				</div>
 			)
 			)}
@@ -21,3 +19,4 @@ export default function PostItem({posts}) {
 		
 	)
 }
+
